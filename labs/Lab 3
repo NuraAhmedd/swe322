@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+   <meta charset = " UTF-8 ">
+  <title>   LAB 4  </title>
+
+    <style>
+
+li{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: orange;
+        }
+table, tr, th{
+
+border: 1px solid:
+margin-left:25%;
+font_size:20px;
+width: auto;
+
+}
+
+p{
+text-align: center:
+font-size 20px;
+color;green;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+<?php
+$classmates = array( " Sara ", " Noura ", " Shatha");
+echo "<h3> Course  SWE 322 classmates are: </h3>";
+echo "<u1>";
+$arr_length = count($classmates);
+for ($i=0; $i<$arr_length; $i++) {
+    echo "<li>" .$classmates[$i].  ".</li>";
+}
+
+echo "</ul>";
+
+#this marks the end of the first part
+
+echo "<hr>";
+
+$course = array(
+
+"CIS 103 " => " Programming Fundamentals I",
+"CIS 104 " => " Programming Fundamentals II",
+"CIS 202 " => " Data Structures",
+
+);
+
+
+echo "<h3> Courses I took : <h3>";
+echo "<table border =3 >";
+echo "<tr>";
+echo "<th> course codes </th>";
+echo "<th> course names </th>";
+echo "</tr>";
+
+foreach ($course as $c=> $c_value) {
+    
+
+echo "<tr>";
+echo "<td> $c </td>" ;
+echo "<td> $c_value </td>" ; 
+echo "</tr>";
+  }
+  echo "</table>" ;                          
+  
+
+                            
+?>
+
+</body>
+</html>
